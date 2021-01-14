@@ -1,0 +1,379 @@
+html{
+  height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{ /* rectangle shape*/
+    padding: 1em;
+    background: grey;  
+    margin-bottom: 1%;
+    padding-bottom: 3.5em;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+    background: linear-gradient(0deg, #20232f 0%,#212529 100%);
+}
+
+footer{
+  margin-top: auto;
+  background-color: #20232f;
+  height: 70px;
+  width: 100%;
+  border-top: 2px solid #319183;
+  overflow: hidden;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.navbar-brand
+{
+  color:white;
+  font-size: 25px;
+  height: 40px;
+}
+
+.btn-dark{
+  border: 1px solid white;
+}
+
+.header-style{
+  font-size: 26px;
+}
+
+.nav-link{
+  color: white;
+  font-size: 25px;
+  margin: 0px;
+  float: right;
+}
+
+.fa-home{
+  padding-right: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container-style{
+  width: 60%;
+}
+
+.container-style-two{
+  width: 50%;
+}
+
+.width-row{
+  padding-top: 2rem;
+  padding-bottom: 2%;
+  margin: 0px;
+}
+
+.row-stylez{
+  border: 1px solid #e8e8e8;
+  background: linear-gradient(180deg,#f5f5f5 0,#fff 20px);
+}
+
+.navbar {
+  height: 50px;
+  height: 53px;
+  width: 100%;
+  padding: 0px;
+}
+
+.price{
+  color:#DB0F00;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.name{
+  font-size: 17px;
+  text-align: left;
+}
+
+.price-center{
+  color:#DB0F00;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.name-center{
+  font-size: 17px;
+}
+
+.form-control:focus { /* changes input glow when clicked*/
+    border-color: white;
+    box-shadow: 5px 5px 18px #888888;
+  }
+
+.img-margin{ 
+  margin-bottom: 2rem;
+  margin-top: 0.9%;
+
+}
+
+.ftr{
+  color:grey;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+.product-img-border{
+  width: 200px;
+  height: 350px;
+  background-position: center;
+  background-color: #20232f;
+  margin: auto;
+  display: table;
+  border-radius: 9px;
+}
+
+.card-text-style{
+  color:white;
+  font-size: 23px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.card-text-style:hover{
+  color: #319183;
+  text-decoration: none;
+}
+
+.card-icon{
+  color: white;
+  text-align: center;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+
+.width-img{
+  width: 100%;
+}
+
+.logo-style{
+  margin: 0;
+  padding: 0;
+  margin-left: 1%;
+  font-size: 25px;
+}
+
+/* indented corners on front page */
+.content{
+  position:relative;
+  width: 200px;
+  height: 350px;
+  display: table;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.content:hover{
+  transform: scale(1.02);
+}
+
+.content:before, 
+.content:after, 
+.content>:last-child:before, 
+.content>:last-child:after {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-color: #319183;
+    border-style: solid;
+    content: ' ';
+}
+
+.content:before {
+    top: 15px;
+    left: 15px;
+    border-width: 2px 0 0 2px
+}
+
+.content:after {
+    top: 15px;
+    right: 15px;
+    border-width: 2px 2px 0 0
+}
+
+.content>:last-child:before {
+    bottom: 15px;
+    right: 15px;     
+    border-width: 0 2px 2px 0
+}
+
+.content>:last-child:after {
+    bottom: 15px;
+    left: 15px;
+    border-width: 0 0 2px 2px
+}
+
+
+#search-form {
+    margin-top: 5%;
+    margin: 8%;
+}
+
+#logo{
+ height: 35px;
+ width: 35px;
+}
+
+#single-img{
+  height: 225px;
+  width: 225px;
+}
+
+#single-img-product{
+  height: 180px;
+  width: 180px;
+}
+
+
+@media (min-width: 600px) {
+ h1 {
+   font-size: 1.25 rem;
+ }
+
+}
+@media (max-width: 384px) {
+  h1 {
+    font-size: 30px;
+  }
+ 
+ }
+
+ @media (max-width: 1399px){
+  .container{
+    width: 55%;
+  }
+
+  .price{
+    font-size: 15px;
+  }
+  
+  .name{
+    font-size: 16px;
+    text-align: left;
+  }
+
+ }
+
+ 
+
+ @media(max-width: 1330px){
+  #single-img-product{
+    height: 160px;
+    width: 160px;
+  }
+
+  .container{
+    width: 60%;
+  }
+ }
+
+ @media(max-width: 1199px){
+  .container{
+    width: 70%;
+  }
+ }
+
+ @media (max-width: 991px){
+  #single-img-product{
+    height: 150px;
+    width: 150px;
+  }
+
+  .price{
+    font-size: 16px;
+  }
+  
+  .name{
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .logo-style{
+    font-size: 20px;
+  }
+
+  .container{
+    width: 90%;
+  }
+
+  .ftr{
+    line-height: 50px;
+  }
+  
+ }
+
+ /* small phones*/
+ @media (max-width: 470px){
+  #single-img-product{
+    height: 130px;
+    width: 130px;
+  }
+  .price{
+    font-size: 14px;
+  }
+  
+  .name{
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .logo-style{
+    font-size: 15px;
+  }
+
+  .nav-link{
+    font-size: 18px;
+  }
+
+  .ftr{
+    line-height: 50px;
+  }
+
+  .header-style{
+    font-size: 20px;
+  }
+
+  #single-img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .price-center{
+    font-size: 17px;
+  }
+  
+  .name-center{
+    font-size: 16px;
+  }
+ }
+
+ 

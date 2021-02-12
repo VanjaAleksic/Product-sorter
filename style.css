@@ -328,8 +328,13 @@ a:hover{
   .ftr{
     line-height: 50px;
   }
-  
  }
+
+@media (max-width: 575px){
+  .product-img-border{
+    height: 180px;
+    width: 100%;
+  }
 
  /* small phones*/
  @media (max-width: 470px){

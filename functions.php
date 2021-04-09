@@ -72,7 +72,7 @@
         echo '
         </div>
             <footer>
-                <h3 class="ftr center" style="padding-top: 1.3%;"><i class="fa fa-copyright" aria-hidden="true"></i> '. $year .' Vanja Aleksić</h3>
+                <h3 class="ftr center" style="padding-top: 1.3%;"> '. $year .' Vanja Aleksić</h3>
             </footer>
         ';
     }

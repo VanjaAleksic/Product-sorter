@@ -35,8 +35,6 @@
     $resultB = mysqli_query($conn, $sqlB);
     $queryResultB = mysqli_num_rows($resultB);
 
-    //echo $queryResultB;
-
     //shows products with same weight
     if ($queryResult > 0) { 
         echo '<h4 class="center header-style"><i class="fas fa-weight"></i> Pečivo se stejnou váhou</h4>';
